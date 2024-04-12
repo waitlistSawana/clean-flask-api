@@ -9,4 +9,15 @@ GET {{baseUri}}/
 GET {{baseUri}}/blueprint/bluehello
 Content-Type: application/json
 
+### Get add smile
+GET {{baseUri}}/blueprint/smile
+
+### Post add smil
+POST {{baseUri}}/blueprint/smile
+Content-Type: application/json
+
+{
+    "msg": "i get a text?"
+}
+
 

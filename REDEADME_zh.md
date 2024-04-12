@@ -2,7 +2,13 @@
 
 https://flask.palletsprojects.com/en/3.0.x/
 
-帮助您迅速开始一个 flask api 服务器的构建，项目集成了
+帮助您迅速开始一个 flask api 服务器的构建，项目可以用来：
+
+- 创建路由和函数并引用 -- `cleanflask/__init__.py` flask 基本的 app.route 路由 
+
+- 使用蓝图创建子路由 -- `cleanflask/blurprint.py` 
+
+- 本地 sqlite 数据库 -- `cleanflask/schema.sql` 和 `cleanflask/db.py`
 
 ## 安装项目文件
 
@@ -22,7 +28,7 @@ https://flask.palletsprojects.com/en/3.0.x/
 
 本地运行程序
 
-```flask --app cleanflask run --debugger --port 5050```
+```flask --app cleanflask run --debugger --reload --port 5050```
 
 安装 sqlite 数据库
 
