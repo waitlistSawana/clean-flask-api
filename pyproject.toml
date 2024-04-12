@@ -1,0 +1,11 @@
+[project]
+name = "CleanFlask"
+version = "1.0.0"
+description = "Clean Flask for starting a flask project in minus. -- Sawana"
+dependencies = [
+    "flask",
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"

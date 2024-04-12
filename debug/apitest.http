@@ -1,0 +1,12 @@
+# "REST Client" from Exensions
+
+@baseUri=http://127.0.0.1:5050
+
+### root
+GET {{baseUri}}/
+
+### blueprint
+GET {{baseUri}}/blueprint/bluehello
+Content-Type: application/json
+
+
