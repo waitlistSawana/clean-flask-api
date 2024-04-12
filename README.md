@@ -20,21 +20,32 @@ https://flask.palletsprojects.com/en/3.0.x/
 
 - [ ] 一键部署到 Vercel
 
+- [ ] 数据库操作集成 设置seed
+ 
 ## 安装项目文件
 
-方式 1 ： `requirements.txt`
+启动虚拟环境并启用：
+
+```bash
+python3 -m venv .venv
+.venv\Scripts\activate
+```
+
+安装依赖：
+
+方式 1  `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
 ```
 
-方式 2 ： `pyproject.toml`
+方式 2  `pyproject.toml`
 
 ```bash
 pip install -e .
 ```
 
-方法 3 : `cleanflask-1.0.0-py2.py3-none-any.whl`
+方法 3  `cleanflask-1.0.0-py2.py3-none-any.whl`
 
 ```bash
 pip install cleanflask-1.0.0-py2.py3-none-any.whl
@@ -56,9 +67,7 @@ flask --app cleanflask run --debugger --reload --port 5050
 
 ## 测试 api
 
-使用插件 " REST Client " 
-
-`debug/apitest.http`
+使用插件 " REST Client " ，到`debug/apitest.http`文件中进行测试。
 
 ## 覆盖率测试
 

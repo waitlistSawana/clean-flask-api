@@ -3,6 +3,7 @@ import sqlite3
 import click
 from flask import current_app, g
 
+# 设置和数据库有关的命令 （不用改）
 
 def get_db():
     # g 是一个特殊的对象 如果同一个请求中第二次调用这个函数 那么会重用这个链接
