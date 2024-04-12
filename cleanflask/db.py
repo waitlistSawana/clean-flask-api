@@ -15,7 +15,6 @@ def get_db():
         )
         g.db.row_factory = sqlite3.Row  # 让开发者可以用列名来访问数据
 
-    # 在记录里 直接返回
     return g.db
 
 
@@ -33,7 +32,7 @@ def init_db():
         db.executescript(f.read().decode("utf8"))
 
 
-@click.command("init-db")  # 现在可以用命令行调用了
+@click.command("init-db")  # 现在可以用命令行调用了 init-db
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()

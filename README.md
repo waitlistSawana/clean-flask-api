@@ -1,5 +1,7 @@
 # Clean Flask APP
 
+参考自 Flask 官方的 tutorial
+
 https://flask.palletsprojects.com/en/3.0.x/
 
 帮助您迅速开始一个 flask api 服务器的构建，项目可以用来：
