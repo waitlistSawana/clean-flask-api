@@ -1,21 +1,25 @@
-# Clean Flask APP
+# Clean Flask Api
 
 参考自 Flask 官方的 tutorial
 
 https://flask.palletsprojects.com/en/3.0.x/
 
-帮助您迅速开始一个 flask api 服务器的构建，项目可以用来：
+帮助您迅速开始一个 flask api 服务器的构建，建立一个高度可用的flask后端服务器。
+
+（不需要再从“def hello():”开始！）
+
+项目包括：
 
 - 创建路由和函数并引用 -- `cleanflask/__init__.py` flask 基本的 app.route 路由 
 
-- 使用蓝图创建子路由 -- `cleanflask/blurprint.py` 
+- 使用“蓝图”创建子路由 -- `cleanflask/blurprint.py` 清晰的URL结构、模块化、代码重用、拓展性、减少冲突
 
-- 本地 sqlite 数据库 -- `cleanflask/schema.sql` 和 `cleanflask/db.py`
+- 本地 sqlite 数据库 -- `cleanflask/schema.sql` 和 `cleanflask/db.py` 在官方 tutorial 查看sqlite数据库的使用技巧
 
 ## todo
 
 - [ ] 一键部署到 Vercel
- 
+
 ## 安装项目文件
 
 方式 1 ： `requirements.txt`
@@ -38,16 +42,16 @@ pip install cleanflask-1.0.0-py2.py3-none-any.whl
 
 ## 启动
 
-本地运行程序
-
-```bash
-flask --app cleanflask run --debugger --reload --port 5050
-```
-
 安装 sqlite 数据库
 
 ```bash
 flask --app cleanflask init-db
+```
+
+本地运行程序
+
+```bash
+flask --app cleanflask run --debugger --reload --port 5050
 ```
 
 ## 测试 api
