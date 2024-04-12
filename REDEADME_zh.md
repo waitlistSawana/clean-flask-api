@@ -10,6 +10,10 @@ https://flask.palletsprojects.com/en/3.0.x/
 
 - 本地 sqlite 数据库 -- `cleanflask/schema.sql` 和 `cleanflask/db.py`
 
+## todo
+
+- [ ] 一键部署到 Vercel
+ 
 ## 安装项目文件
 
 方式 1 ： `requirements.txt`
